@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QRIS Gateway Neon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💫 QRIS Payment Gateway</h1>
+
+    <!-- Input Area -->
+    <div id="inputArea">
+      <input type="number" id="jumlah" placeholder="Masukkan jumlah (Rp)">
+      <button onclick="buatPembayaran()">🚀 Buat Pembayaran</button>
+    </div>
+
+    <!-- QRIS Area -->
+    <div id="qrisArea" class="hidden">
+      <img id="qrisImage" alt="QRIS" />
+      <div id="paymentInfo"></div>
+    </div>
+
+    <!-- Batalkan -->
+    <button id="batalBtn" class="hidden" onclick="batalkanPembayaran()">❌ Batalkan</button>
+
+    <!-- Sukses -->
+    <div id="suksesArea" class="hidden">
+      <h2>✅ Transaksi Sukses</h2>
+      <p id="suksesInfo"></p>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
