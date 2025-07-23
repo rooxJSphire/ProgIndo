@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pembelajaran HTML Dasar</title>
+  <link rel="stylesheet" href="belajar.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Logo HTML" class="logo">
+    <h1>Belajar HTML Dasar</h1>
+    <p class="sub">Pahami fondasi pembuatan website dari awal.</p>
+  </header>
+
+  <main class="content">
+    <section class="materi">
+      <h2>Apa itu HTML?</h2>
+      <p>HTML (HyperText Markup Language) adalah bahasa markup yang digunakan untuk membuat struktur halaman web. HTML bukan bahasa pemrograman, melainkan bahasa penanda (markup).</p>
+    </section>
+
+    <section class="materi">
+      <h2>Struktur Dasar HTML</h2>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Judul Halaman&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Halo Dunia!&lt;/h1&gt;
+    &lt;p&gt;Ini paragraf pertama saya.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+      <p><strong>Penjelasan:</strong></p>
+      <ul>
+        <li><code>&lt;!DOCTYPE html&gt;</code>: Deklarasi HTML5.</li>
+        <li><code>&lt;html&gt;</code>: Root dari semua elemen HTML.</li>
+        <li><code>&lt;head&gt;</code>: Informasi metadata dan judul.</li>
+        <li><code>&lt;body&gt;</code>: Konten utama yang ditampilkan.</li>
+      </ul>
+    </section>
+
+    <section class="materi">
+      <h2>Heading dan Paragraf</h2>
+      <pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;p&gt;Ini adalah paragraf.&lt;/p&gt;
+</code></pre>
+      <p>Gunakan <code>h1</code> hingga <code>h6</code> untuk judul. <code>p</code> untuk paragraf biasa.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Menambahkan Gambar</h2>
+      <pre><code>&lt;img src="gambar.jpg" alt="Deskripsi gambar"&gt;</code></pre>
+      <p><code>src</code> menentukan sumber gambar, <code>alt</code> untuk deskripsi alternatif.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Menambahkan Tautan</h2>
+      <pre><code>&lt;a href="https://google.com"&gt;Kunjungi Google&lt;/a&gt;</code></pre>
+      <p>Tautan akan membawa pengguna ke halaman lain atau URL eksternal.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Daftar List</h2>
+      <pre><code>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+      <p><code>ul</code> untuk daftar tidak berurutan, <code>ol</code> untuk daftar bernomor.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Membuat Tabel</h2>
+      <pre><code>&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Nama&lt;/th&gt;
+    &lt;th&gt>Umur&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Ali&lt;/td&gt;
+    &lt;td&gt;21&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+      <p>Tabel digunakan untuk menampilkan data dalam bentuk baris dan kolom.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Formulir Input</h2>
+      <pre><code>&lt;form action="/submit" method="post"&gt;
+  &lt;label for="nama"&gt;Nama:&lt;/label&gt;
+  &lt;input type="text" id="nama" name="nama"&gt;
+  &lt;input type="submit" value="Kirim"&gt;
+&lt;/form&gt;
+</code></pre>
+      <p>Form digunakan untuk mengambil input dari pengguna seperti nama, email, dll.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Komentar dalam HTML</h2>
+      <pre><code>&lt;!-- Ini adalah komentar --&gt;</code></pre>
+      <p>Komentar tidak akan ditampilkan di browser, hanya terlihat di kode sumber.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Kesimpulan</h2>
+      <p>HTML adalah fondasi utama pembuatan website. Jika kamu sudah paham HTML, kamu bisa lanjut ke CSS dan JavaScript untuk memperindah dan menambah interaktivitas website-mu.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>ProgIndo | One for all</p>
+  </footer>
+</body>
+</html>

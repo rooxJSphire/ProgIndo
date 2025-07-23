@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Belajar CSS - Pemrograman Dasar</title>
+  <link rel="stylesheet" href="../pembelajaran/belajar.css">
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="Logo CSS" class="logo">
+    <h1>Belajar CSS (Cascading Style Sheets)</h1>
+    <p>Dasar-dasar CSS untuk mempercantik tampilan halaman web</p>
+  </header>
+
+  <main>
+    <section class="materi">
+      <h2>Apa Itu CSS?</h2>
+      <p>
+        CSS (Cascading Style Sheets) adalah bahasa desain yang digunakan untuk mengatur tampilan dan layout halaman HTML. Dengan CSS, kita bisa mengatur warna, ukuran, font, posisi elemen, dan animasi.
+      </p>
+    </section>
+
+    <section class="materi">
+      <h2>Struktur Dasar CSS</h2>
+      <pre><code>selector {
+  property: value;
+}</code></pre>
+      <p>
+        Contoh penggunaan:
+      </p>
+      <pre><code>h1 {
+  color: blue;
+  text-align: center;
+}</code></pre>
+      <p><b>Penjelasan:</b> Selector `h1` akan memiliki teks berwarna biru dan berada di tengah.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Cara Menghubungkan CSS ke HTML</h2>
+      <ol>
+        <li><b>Internal CSS:</b> Ditulis di dalam tag &lt;style&gt; dalam file HTML.</li>
+        <li><b>External CSS:</b> Disimpan dalam file .css lalu di-link lewat &lt;link&gt;.</li>
+        <li><b>Inline CSS:</b> Ditulis langsung dalam elemen HTML.</li>
+      </ol>
+      <pre><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+    </section>
+
+    <section class="materi">
+      <h2>Contoh Styling</h2>
+      <pre><code>body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}</code></pre>
+      <p><b>Efek:</b> Button akan berubah ukuran dan memiliki efek glow saat hover.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Selector CSS</h2>
+      <ul>
+        <li><b>.class</b> - Memilih elemen berdasarkan class</li>
+        <li><b>#id</b> - Memilih elemen berdasarkan ID</li>
+        <li><b>*</b> - Memilih semua elemen</li>
+        <li><b>tag</b> - Memilih semua tag tertentu seperti `p`, `div`, `h1`</li>
+      </ul>
+    </section>
+
+    <section class="materi">
+      <h2>Box Model</h2>
+      <p>Setiap elemen HTML adalah sebuah kotak yang terdiri dari:</p>
+      <ul>
+        <li><b>Content</b> - Isi dari elemen</li>
+        <li><b>Padding</b> - Ruang antara konten dan border</li>
+        <li><b>Border</b> - Garis tepi elemen</li>
+        <li><b>Margin</b> - Ruang luar antar elemen</li>
+      </ul>
+    </section>
+
+    <section class="materi">
+      <h2>Responsive Design</h2>
+      <p>Gunakan media query untuk membuat tampilan menyesuaikan ukuran layar:</p>
+      <pre><code>@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}</code></pre>
+    </section>
+
+    <section class="materi">
+      <h2>Animasi CSS</h2>
+      <pre><code>@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade {
+  animation: fadeIn 1s ease-in-out;
+}</code></pre>
+      <p><b>Penjelasan:</b> Elemen dengan class `.fade` akan muncul perlahan.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Tips Best Practice</h2>
+      <ul>
+        <li>Gunakan class untuk styling, hindari inline style.</li>
+        <li>Susun CSS agar mudah dibaca (indentasi, grup kode).</li>
+        <li>Pakai tool seperti VS Code + Live Server.</li>
+        <li>Manfaatkan devtools browser untuk debugging.</li>
+      </ul>
+    </section>
+
+    <section class="materi">
+      <h2>Latihan CSS</h2>
+      <p>Buatlah tombol dengan efek hover dan responsive layout.</p>
+      <p><i>Silakan edit file `belajar.css` untuk eksperimen gaya kamu.</i></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>ProgIndo | One for all</p>
+  </footer>
+</body>
+</html>

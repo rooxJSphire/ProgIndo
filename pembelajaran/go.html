@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pembelajaran Go</title>
+  <link rel="stylesheet" href="belajar.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Logo Go" class="logo" />
+    <h1>Pembelajaran Go</h1>
+    <p>Belajar bahasa pemrograman Go dari dasar</p>
+  </header>
+
+  <main class="content">
+    <section class="materi">
+      <h2>Apa itu Go?</h2>
+      <p>
+        Go (atau Golang) adalah bahasa pemrograman yang dikembangkan oleh Google. Go dirancang untuk efisiensi, kecepatan, dan kemudahan dalam pengembangan perangkat lunak skala besar.
+      </p>
+    </section>
+
+    <section class="materi">
+      <h2>Struktur Dasar Program Go</h2>
+      <pre><code>package main
+import "fmt"
+
+func main() {
+    fmt.Println("Halo, dunia!")
+}</code></pre>
+      <p>Program dasar di atas menampilkan teks ke layar menggunakan fungsi <code>fmt.Println</code>.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Tipe Data</h2>
+      <ul>
+        <li><strong>int</strong> - bilangan bulat</li>
+        <li><strong>float64</strong> - bilangan desimal</li>
+        <li><strong>string</strong> - teks atau kumpulan karakter</li>
+        <li><strong>bool</strong> - nilai benar atau salah</li>
+      </ul>
+    </section>
+
+    <section class="materi">
+      <h2>Variabel dan Konstanta</h2>
+      <pre><code>var nama string = "Andi"
+umur := 20
+const pi = 3.14</code></pre>
+      <p>Go menggunakan <code>var</code> untuk deklarasi variabel dan <code>:=</code> untuk deklarasi cepat. Konstanta ditentukan dengan <code>const</code>.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Kondisi dan Perulangan</h2>
+      <pre><code>angka := 10
+if angka > 5 {
+    fmt.Println("Lebih besar dari 5")
+}
+
+for i := 0; i < 3; i++ {
+    fmt.Println("Perulangan ke-", i)
+}</code></pre>
+    </section>
+
+    <section class="materi">
+      <h2>Fungsi dalam Go</h2>
+      <pre><code>func tambah(a int, b int) int {
+    return a + b
+}
+
+func main() {
+    fmt.Println(tambah(2, 3))
+}</code></pre>
+    </section>
+
+    <section class="materi">
+      <h2>Array dan Slice</h2>
+      <pre><code>var angka = [3]int{1, 2, 3}
+var nama = []string{"A", "B", "C"}
+
+fmt.Println(angka)
+fmt.Println(nama)</code></pre>
+      <p><code>Array</code> memiliki ukuran tetap, sedangkan <code>slice</code> fleksibel dan lebih sering digunakan dalam Go.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Struct dan Method</h2>
+      <pre><code>type Mahasiswa struct {
+    Nama string
+    Umur int
+}
+
+func (m Mahasiswa) Perkenalan() {
+    fmt.Println("Halo, saya", m.Nama)
+}</code></pre>
+      <p><code>Struct</code> digunakan untuk membuat tipe data buatan dan <code>method</code> ditambahkan untuk perilaku objek.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Package dan Import</h2>
+      <pre><code>import (
+    "fmt"
+    "math"
+)
+
+func main() {
+    fmt.Println(math.Sqrt(16))
+}</code></pre>
+      <p>Go menggunakan <code>import</code> untuk menggunakan library lain seperti <code>fmt</code> dan <code>math</code>.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>ProgIndo | One for all</p>
+  </footer>
+</body>
+</html>

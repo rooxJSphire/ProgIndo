@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pembelajaran Python</title>
+  <link rel="stylesheet" href="belajar.css">
+</head>
+<body>
+  <header class="header">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo" class="logo">
+    <h1>Pembelajaran Python</h1>
+    <p>Dasar-dasar Python untuk pemula hingga mahir</p>
+  </header>
+
+  <main class="content">
+    <section class="materi">
+      <h2>Apa itu Python?</h2>
+      <p>
+        Python adalah bahasa pemrograman tingkat tinggi yang dikembangkan oleh Guido van Rossum dan dirilis pertama kali pada tahun 1991. Python dirancang untuk mudah dipahami, bersifat open-source, dan memiliki komunitas yang besar.
+      </p>
+      <p>
+        Python digunakan di berbagai bidang seperti pengembangan web (Django, Flask), kecerdasan buatan (TensorFlow, PyTorch), analisis data (Pandas, NumPy), automasi, hingga pengembangan aplikasi desktop.
+      </p>
+    </section>
+
+    <section class="materi">
+      <h2>Variabel & Tipe Data</h2>
+      <p>
+        Dalam Python, tidak perlu mendeklarasikan tipe variabel secara eksplisit karena Python adalah bahasa yang <strong>dinamis</strong>. Interpreter akan mengenali tipe data berdasarkan nilai yang diberikan.
+      </p>
+      <pre><code># Contoh:
+nama = "Budi"         # string
+umur = 25             # integer
+tinggi = 170.5        # float
+is_aktif = True       # boolean</code></pre>
+    </section>
+
+    <section class="materi">
+      <h2>Operasi Aritmatika</h2>
+      <p>
+        Python mendukung operasi matematika dasar seperti penjumlahan, pengurangan, perkalian, pembagian, modulus, dan perpangkatan.
+      </p>
+      <pre><code>a = 10
+b = 3
+print(a + b)   # 13
+print(a - b)   # 7
+print(a * b)   # 30
+print(a / b)   # 3.33
+print(a % b)   # 1
+print(a ** b)  # 1000</code></pre>
+    </section>
+
+    <section class="materi">
+      <h2>Fungsi (Function)</h2>
+      <p>
+        Fungsi digunakan untuk membuat kode yang terstruktur dan bisa digunakan kembali. Gunakan kata kunci <code>def</code> untuk membuat fungsi.
+      </p>
+      <pre><code>def sapa(nama):
+    return "Halo, " + nama
+
+print(sapa("Dina"))</code></pre>
+      <p>
+        Fungsi juga bisa menerima lebih dari satu argumen dan mengembalikan nilai kompleks.
+      </p>
+    </section>
+
+    <section class="materi">
+      <h2>Kondisi (if, elif, else)</h2>
+      <p>
+        Gunakan pernyataan kondisi untuk membuat keputusan dalam program.
+      </p>
+      <pre><code>nilai = 85
+if nilai >= 90:
+    print("A")
+elif nilai >= 80:
+    print("B")
+else:
+    print("C")</code></pre>
+      <p>Indentasi (spasi/tab) penting dalam Python karena menentukan blok kode.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Perulangan</h2>
+      <p>Python memiliki dua jenis loop utama: <code>for</code> dan <code>while</code>.</p>
+      <pre><code># For loop
+for i in range(1, 6):
+    print("Angka ke-", i)
+
+# While loop
+x = 1
+while x <= 5:
+    print(x)
+    x += 1</code></pre>
+      <p>
+        Gunakan <code>break</code> untuk menghentikan loop dan <code>continue</code> untuk melewati iterasi.
+      </p>
+    </section>
+
+    <section class="materi">
+      <h2>List & Dictionary</h2>
+      <p>
+        <code>List</code> digunakan untuk menyimpan kumpulan data dalam satu variabel. <code>Dictionary</code> menyimpan data dengan pasangan kunci-nilai.
+      </p>
+      <pre><code># List
+buah = ["Apel", "Jeruk", "Mangga"]
+print(buah[0])  # Apel
+
+# Dictionary
+orang = {
+    "nama": "Rina",
+    "umur": 20
+}
+print(orang["nama"])  # Rina</code></pre>
+    </section>
+
+    <section class="materi">
+      <h2>Input & Output</h2>
+      <p>
+        Gunakan <code>input()</code> untuk menerima data dari user dan <code>print()</code> untuk menampilkannya ke layar.
+      </p>
+      <pre><code>nama = input("Siapa nama kamu? ")
+print("Halo,", nama)</code></pre>
+    </section>
+
+    <section class="materi">
+      <h2>Penggunaan Modul</h2>
+      <p>
+        Python memiliki ribuan modul bawaan dan eksternal. Gunakan <code>import</code> untuk mengakses modul.
+      </p>
+      <pre><code>import math
+
+print(math.sqrt(16))   # 4.0
+print(math.pi)         # 3.141592653589793</code></pre>
+    </section>
+
+    <section class="materi">
+      <h2>Exception Handling</h2>
+      <p>
+        Python menyediakan mekanisme penanganan error dengan <code>try</code> dan <code>except</code>.
+      </p>
+      <pre><code>try:
+    x = int(input("Masukkan angka: "))
+    hasil = 10 / x
+    print("Hasil:", hasil)
+except ZeroDivisionError:
+    print("Tidak bisa dibagi dengan nol.")
+except ValueError:
+    print("Input harus berupa angka.")</code></pre>
+    </section>
+
+    <section class="materi">
+      <h2>Latihan Mini Proyek</h2>
+      <p>Membuat kalkulator luas segitiga:</p>
+      <pre><code>def luas_segitiga(alas, tinggi):
+    return 0.5 * alas * tinggi
+
+a = float(input("Masukkan alas: "))
+t = float(input("Masukkan tinggi: "))
+print("Luas:", luas_segitiga(a, t))</code></pre>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>ProgIndo | One for all</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Belajar PHP</title>
+  <link rel="stylesheet" href="belajar.css">
+</head>
+<body>
+  <header class="header">
+    <img src="https://www.php.net/images/logos/new-php-logo.svg" alt="Logo PHP" class="logo">
+    <h1>Belajar PHP</h1>
+    <p>Dasar Pemrograman PHP untuk Pemula</p>
+  </header>
+
+  <main class="content">
+    <section class="materi">
+      <h2>Apa itu PHP?</h2>
+      <p><strong>PHP</strong> (Hypertext Preprocessor) adalah bahasa scripting server-side yang digunakan untuk membuat halaman web dinamis. PHP biasanya digunakan bersama HTML dan database seperti MySQL.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Struktur Dasar PHP</h2>
+      <pre><code>&lt;?php
+echo "Halo Dunia!";
+?&gt;
+      </code></pre>
+      <p>Semua kode PHP dibuka dengan <code>&lt;?php</code> dan ditutup dengan <code>?&gt;</code>.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Variabel dan Tipe Data</h2>
+      <pre><code>&lt;?php
+$nama = "Budi";
+$umur = 20;
+echo "Nama saya $nama dan umur saya $umur tahun.";
+?&gt;
+      </code></pre>
+      <ul>
+        <li>Variabel diawali dengan simbol <code>$</code></li>
+        <li>Tipe data bisa berupa string, integer, boolean, array, dll</li>
+      </ul>
+    </section>
+
+    <section class="materi">
+      <h2>Kondisional</h2>
+      <pre><code>&lt;?php
+$nilai = 85;
+if ($nilai >= 80) {
+    echo "Nilai Anda A";
+} else {
+    echo "Nilai Anda B";
+}
+?&gt;
+      </code></pre>
+      <p>PHP mendukung struktur kontrol seperti <code>if</code>, <code>else</code>, dan <code>switch</code>.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Perulangan (Looping)</h2>
+      <pre><code>&lt;?php
+for ($i = 1; $i &lt;= 5; $i++) {
+    echo "Baris ke-$i &lt;br&gt;";
+}
+?&gt;
+      </code></pre>
+      <p>PHP memiliki <code>for</code>, <code>while</code>, dan <code>foreach</code> loop.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Fungsi</h2>
+      <pre><code>&lt;?php
+function salam($nama) {
+    return "Halo, $nama!";
+}
+echo salam("Dina");
+?&gt;
+      </code></pre>
+      <p>Fungsi digunakan untuk menyimpan blok kode yang bisa digunakan kembali.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Form HTML dan PHP</h2>
+      <pre><code>&lt;form method="post"&gt;
+  Nama: &lt;input type="text" name="nama"&gt;
+  &lt;input type="submit" value="Kirim"&gt;
+&lt;/form&gt;
+
+&lt;?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $nama = $_POST["nama"];
+  echo "Halo, $nama!";
+}
+?&gt;
+      </code></pre>
+      <p>PHP dapat menangani input dari form HTML menggunakan metode <code>GET</code> atau <code>POST</code>.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Koneksi ke MySQL</h2>
+      <pre><code>&lt;?php
+$conn = mysqli_connect("localhost", "root", "", "belajar");
+if (!$conn) {
+  die("Koneksi gagal: " . mysqli_connect_error());
+}
+echo "Koneksi berhasil!";
+?&gt;
+      </code></pre>
+      <p>Koneksi database menggunakan fungsi <code>mysqli_connect</code>.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>ProgIndo | One for all</p>
+  </footer>
+</body>
+</html>

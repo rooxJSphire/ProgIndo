@@ -1,0 +1,87 @@
+/* Umum */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(120deg, #eef2f3, #8e9eab);
+  color: #222;
+}
+
+/* Header */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  border-bottom: 5px solid #3498db;
+}
+
+header .logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+/* Judul & Subjudul */
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.1rem;
+  color: #d0dfff;
+}
+
+/* Konten Utama */
+main {
+  padding: 2rem 10%;
+  background: rgba(255, 255, 255, 0.95);
+  margin: 2rem auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Section */
+main section {
+  margin-bottom: 2.5rem;
+}
+
+main h2 {
+  color: #34495e;
+  border-left: 5px solid #3498db;
+  padding-left: 0.7rem;
+  font-size: 1.7rem;
+}
+
+main p, main li {
+  font-size: 1.05rem;
+  margin: 0.7rem 0;
+}
+
+/* Kode */
+pre {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-left: 5px solid #3498db;
+  overflow-x: auto;
+  font-family: Consolas, monospace;
+  border-radius: 8px;
+}
+
+/* Daftar */
+ul {
+  padding-left: 1.5rem;
+}
+
+/* Footer (opsional) */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin: 2rem 0;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Belajar Java</title>
+  <link rel="stylesheet" href="belajar.css">
+</head>
+<body>
+  <header class="header">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Logo Java" class="logo">
+    <h1>Belajar Java</h1>
+    <p>Dasar Pemrograman Java untuk Pemula</p>
+  </header>
+
+  <main class="content">
+    <section class="materi">
+      <h2>Apa itu Java?</h2>
+      <p><strong>Java</strong> adalah bahasa pemrograman berorientasi objek yang populer untuk pengembangan aplikasi desktop, mobile (terutama Android), dan web. Java bersifat portable karena berjalan di atas Java Virtual Machine (JVM).</p>
+    </section>
+
+    <section class="materi">
+      <h2>Struktur Dasar Java</h2>
+      <pre><code>public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("Halo Dunia!");
+  }
+}</code></pre>
+      <p>Setiap program Java dimulai dari method <code>main()</code> di dalam sebuah class.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Variabel dan Tipe Data</h2>
+      <pre><code>String nama = "Budi";
+int umur = 20;
+double tinggi = 170.5;
+boolean isAktif = true;</code></pre>
+      <ul>
+        <li>Java menggunakan tipe data seperti <code>int</code>, <code>double</code>, <code>boolean</code>, dan <code>String</code>.</li>
+        <li>Setiap variabel harus memiliki tipe data yang jelas.</li>
+      </ul>
+    </section>
+
+    <section class="materi">
+      <h2>Kondisional</h2>
+      <pre><code>int nilai = 85;
+if (nilai >= 80) {
+  System.out.println("Nilai Anda A");
+} else {
+  System.out.println("Nilai Anda B");
+}</code></pre>
+      <p>Java mendukung struktur kontrol <code>if</code>, <code>else</code>, dan <code>switch</code>.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Perulangan (Looping)</h2>
+      <pre><code>for (int i = 1; i <= 5; i++) {
+  System.out.println("Baris ke-" + i);
+}</code></pre>
+      <p>Java memiliki loop seperti <code>for</code>, <code>while</code>, dan <code>do-while</code>.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Fungsi (Method)</h2>
+      <pre><code>public static String salam(String nama) {
+  return "Halo, " + nama + "!";
+}
+
+System.out.println(salam("Dina"));</code></pre>
+      <p>Method di Java digunakan untuk menyimpan logika yang dapat digunakan kembali.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Class dan Object</h2>
+      <pre><code>public class Mobil {
+  String merk = "Toyota";
+
+  void jalan() {
+    System.out.println("Mobil berjalan...");
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Mobil m = new Mobil();
+    m.jalan();
+  }
+}</code></pre>
+      <p>Java adalah bahasa berorientasi objek. Segala sesuatu dibangun dari <code>class</code> dan <code>object</code>.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Array</h2>
+      <pre><code>String[] buah = {"Apel", "Jeruk", "Mangga"};
+System.out.println(buah[0]);</code></pre>
+      <p>Array di Java menyimpan kumpulan data bertipe sama dalam satu variabel.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Input dari User</h2>
+      <pre><code>import java.util.Scanner;
+
+Scanner input = new Scanner(System.in);
+System.out.print("Masukkan nama: ");
+String nama = input.nextLine();
+System.out.println("Halo, " + nama);</code></pre>
+      <p>Gunakan class <code>Scanner</code> untuk membaca input dari user di terminal.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Exception Handling (Try-Catch)</h2>
+      <pre><code>try {
+  int hasil = 10 / 0;
+} catch (ArithmeticException e) {
+  System.out.println("Terjadi kesalahan: " + e.getMessage());
+}</code></pre>
+      <p>Gunakan <code>try-catch</code> untuk menangani error saat runtime.</p>
+    </section>
+
+    <section class="materi">
+      <h2>File I/O Sederhana</h2>
+      <pre><code>import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileDemo {
+  public static void main(String[] args) {
+    try {
+      FileWriter writer = new FileWriter("data.txt");
+      writer.write("Halo, Java File!");
+      writer.close();
+    } catch (IOException e) {
+      System.out.println("Gagal menulis file.");
+    }
+  }
+}</code></pre>
+      <p>Java mendukung operasi file menggunakan class seperti <code>FileWriter</code> dan <code>BufferedReader</code>.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>ProgIndo | One for all</p>
+  </footer>
+</body>
+</html>

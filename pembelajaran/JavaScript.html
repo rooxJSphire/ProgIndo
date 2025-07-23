@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pembelajaran JavaScript</title>
+  <link rel="stylesheet" href="belajar.css">
+</head>
+<body>
+  <header class="header">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo" class="logo">
+    <h1>Pembelajaran JavaScript</h1>
+    <p>Dasar-dasar JavaScript untuk pemula hingga mahir</p>
+  </header>
+
+  <main class="content">
+    <section class="materi">
+      <h2>Apa itu JavaScript?</h2>
+      <p>
+        JavaScript adalah bahasa pemrograman yang digunakan untuk membuat situs web lebih interaktif.
+        JavaScript dapat digunakan untuk mengontrol elemen HTML, merespon event (seperti klik atau hover),
+        dan membangun aplikasi web dinamis.
+      </p>
+    </section>
+
+    <section class="materi">
+      <h2>Variabel & Tipe Data</h2>
+      <p>JavaScript memiliki tiga cara mendeklarasikan variabel:</p>
+      <ul>
+        <li><code>var</code> – versi lama, cakupan fungsi</li>
+        <li><code>let</code> – untuk variabel lokal (modern)</li>
+        <li><code>const</code> – untuk konstanta (tidak bisa diubah)</li>
+      </ul>
+      <pre><code>
+// Contoh:
+let nama = "Ali";
+const umur = 21;
+var status = "Mahasiswa";
+      </code></pre>
+    </section>
+
+    <section class="materi">
+      <h2>Fungsi (Function)</h2>
+      <p>Fungsi digunakan untuk menyimpan logika agar dapat digunakan berulang.</p>
+      <pre><code>
+function sapa(nama) {
+  return "Halo, " + nama + "!";
+}
+console.log(sapa("Dina")); // Halo, Dina!
+      </code></pre>
+    </section>
+
+    <section class="materi">
+      <h2>Kondisi (if, else)</h2>
+      <pre><code>
+let nilai = 85;
+if (nilai >= 80) {
+  console.log("Lulus dengan baik");
+} else {
+  console.log("Perlu belajar lagi");
+}
+      </code></pre>
+    </section>
+
+    <section class="materi">
+      <h2>Perulangan</h2>
+      <p>Perulangan digunakan untuk mengeksekusi kode berulang-ulang.</p>
+      <pre><code>
+// For loop
+for (let i = 1; i <= 5; i++) {
+  console.log("Angka ke-" + i);
+}
+      </code></pre>
+    </section>
+
+    <section class="materi">
+      <h2>Array & Object</h2>
+      <pre><code>
+// Array
+let buah = ["Apel", "Pisang", "Jeruk"];
+console.log(buah[0]); // Apel
+
+// Object
+let orang = {
+  nama: "Fahmi",
+  umur: 22
+};
+console.log(orang.nama); // Fahmi
+      </code></pre>
+    </section>
+
+    <section class="materi">
+      <h2>Event Listener</h2>
+      <p>Digunakan untuk mendeteksi interaksi user:</p>
+      <pre><code>
+document.getElementById("klikSaya").addEventListener("click", function() {
+  alert("Tombol diklik!");
+});
+      </code></pre>
+    </section>
+
+    <section class="materi">
+      <h2>DOM Manipulation</h2>
+      <p>Untuk memodifikasi isi HTML dengan JavaScript:</p>
+      <pre><code>
+document.getElementById("judul").innerText = "Judul Baru";
+      </code></pre>
+    </section>
+
+    <section class="materi">
+      <h2>Latihan Mini Proyek</h2>
+      <p>Membuat tombol interaktif:</p>
+      <pre><code>
+<!-- HTML -->
+<button onclick="hitung()">Klik Hitung</button>
+<p id="hasil"></p>
+
+<!-- JavaScript -->
+function hitung() {
+  let hasil = 5 * 10;
+  document.getElementById("hasil").innerText = "Hasil: " + hasil;
+}
+      </code></pre>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>ProgIndo | One for all</p>
+  </footer>
+</body>
+</html>

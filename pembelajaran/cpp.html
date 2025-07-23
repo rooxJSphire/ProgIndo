@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pembelajaran C++</title>
+  <link rel="stylesheet" href="belajar.css" />
+</head>
+<body>
+  <header class="header">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="Logo C++" class="logo" />
+    <h1>Pembelajaran C++</h1>
+    <p>Belajar bahasa pemrograman C++ dari dasar</p>
+  </header>
+
+  <main class="content">
+    <section class="materi">
+      <h2>Apa itu C++?</h2>
+      <p>
+        C++ adalah bahasa pemrograman yang dikembangkan dari bahasa C. C++ mendukung paradigma pemrograman prosedural dan berorientasi objek, serta banyak digunakan untuk pengembangan sistem, game, dan aplikasi performa tinggi.
+      </p>
+    </section>
+
+    <section class="materi">
+      <h2>Struktur Dasar Program C++</h2>
+      <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Halo, dunia!" &lt;&lt; endl;
+    return 0;
+}</code></pre>
+      <p>Program dasar di atas mencetak teks ke layar menggunakan <code>cout</code> dari library <code>&lt;iostream&gt;</code>.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Tipe Data</h2>
+      <ul>
+        <li><strong>int</strong> - bilangan bulat</li>
+        <li><strong>float / double</strong> - bilangan desimal</li>
+        <li><strong>char</strong> - karakter tunggal</li>
+        <li><strong>string</strong> - teks atau kumpulan karakter</li>
+        <li><strong>bool</strong> - nilai benar atau salah</li>
+      </ul>
+    </section>
+
+    <section class="materi">
+      <h2>Variabel dan Konstanta</h2>
+      <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int umur = 20;
+    const float pi = 3.14;
+    string nama = "Andi";
+    cout &lt;&lt; nama &lt;&lt; " berusia " &lt;&lt; umur &lt;&lt; " tahun." &lt;&lt; endl;
+}</code></pre>
+      <p>Variabel dideklarasikan dengan tipe data tertentu. Konstanta menggunakan keyword <code>const</code>.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Kondisi dan Perulangan</h2>
+      <pre><code>int angka = 10;
+if (angka &gt; 5) {
+    cout &lt;&lt; "Lebih besar dari 5" &lt;&lt; endl;
+}
+
+for (int i = 0; i &lt; 3; i++) {
+    cout &lt;&lt; "Perulangan ke-" &lt;&lt; i &lt;&lt; endl;
+}</code></pre>
+    </section>
+
+    <section class="materi">
+      <h2>Fungsi dalam C++</h2>
+      <pre><code>int tambah(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    cout &lt;&lt; tambah(2, 3) &lt;&lt; endl;
+    return 0;
+}</code></pre>
+      <p>Fungsi digunakan untuk memisahkan logika dan membuat kode lebih terstruktur dan dapat digunakan kembali.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Array dan Vector</h2>
+      <pre><code>#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+
+int main() {
+    int angka[3] = {1, 2, 3};
+    vector&lt;string&gt; nama = {"A", "B", "C"};
+
+    cout &lt;&lt; angka[0] &lt;&lt; endl;
+    cout &lt;&lt; nama[1] &lt;&lt; endl;
+}</code></pre>
+      <p><code>Array</code> memiliki ukuran tetap, sedangkan <code>vector</code> dari STL bersifat fleksibel dan dinamis.</p>
+    </section>
+
+    <section class="materi">
+      <h2>Struct dan Method</h2>
+      <pre><code>struct Mahasiswa {
+    string nama;
+    int umur;
+
+    void perkenalan() {
+        cout &lt;&lt; "Halo, saya " &lt;&lt; nama &lt;&lt; endl;
+    }
+};
+
+int main() {
+    Mahasiswa m;
+    m.nama = "Budi";
+    m.umur = 21;
+    m.perkenalan();
+}</code></pre>
+      <p><code>Struct</code> di C++ digunakan untuk membuat tipe data khusus, dan bisa memiliki method (fungsi anggota).</p>
+    </section>
+
+    <section class="materi">
+      <h2>Input dari User</h2>
+      <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    string nama;
+    cout &lt;&lt; "Masukkan nama: ";
+    cin &gt;&gt; nama;
+    cout &lt;&lt; "Halo, " &lt;&lt; nama &lt;&lt; "!" &lt;&lt; endl;
+}</code></pre>
+      <p>Gunakan <code>cin</code> untuk menerima input dari pengguna di terminal.</p>
+    </section>
+
+    <section class="materi">
+      <h2>File I/O Dasar</h2>
+      <pre><code>#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+using namespace std;
+
+int main() {
+    ofstream file("data.txt");
+    file &lt;&lt; "Ini data dari program C++";
+    file.close();
+}</code></pre>
+      <p>C++ mendukung file handling menggunakan <code>fstream</code> seperti <code>ofstream</code> dan <code>ifstream</code>.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>ProgIndo | One for all</p>
+  </footer>
+</body>
+</html>
