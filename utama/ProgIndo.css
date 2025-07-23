@@ -1,0 +1,99 @@
+/* Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background-color: #1e293b; /* Dark blue header */
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 5px solid #3b82f6;
+}
+
+.header .logo {
+  width: 70px;
+  margin-bottom: 1rem;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Menu Grid */
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Menu Cards */
+.menu-card {
+  background-color: #ffffff;
+  border-left: 4px solid #3b82f6;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+  color: inherit;
+  transition: all 0.2s ease;
+}
+
+.menu-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.8rem;
+}
+
+.menu-card h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+  background-color: #ffffff;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .menu-container {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .header h1 {
+    font-size: 1.6rem;
+  }
+}
